@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BHARATHI B - Full-Stack Developer Portfolio. Building responsive, high-performance web applications.">
+  <title>BHARATHI B | Full-Stack Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- Background Overlays -->
+  <div class="mesh-gradient"></div>
+  <div class="spotlight" id="cursor-spotlight"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-code"></i>  BHARATHI B
+      </a>
+      
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li> <!-- Dynamic section link matched -->
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- controls: Toggle theme & Mobile Hamburger -->
+      <div class="nav-controls">
+        <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="hero">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-bolt"></i> Available for exciting web projects
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text" id="hero-name">BHARATHI B</span>
+            <span id="hero-typed-title">Full-Stack Developer</span>
+          </h1>
+          <div class="hero-subtitle-wrapper">
+            <p class="hero-subtitle" id="hero-desc"></p>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-briefcase"></i> View Work</a>
+          </div>
+          
+          <!-- Animated Stats Container -->
+          <div class="stats-grid" id="stats-container">
+            <!-- Dynamically Rendered Stats -->
+          </div>
+        </div>
+        
+        <!-- Interactive Tech Frame Visual -->
+        <div class="hero-visual">
+          <div class="avatar-glow"></div>
+          <div class="avatar-tech-ring"></div>
+          <div class="avatar-tech-ring-2"></div>
+          <div class="avatar-wrapper">
+            <div class="avatar-image-container">
+              <img id="profile-avatar" src="assets/image copy.png" alt="BHARATHI B Headshot">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="card about-info-card">
+              <h3 class="about-title"><i class="fa-solid fa-rocket"></i> My Mission</h3>
+              <p class="about-text">
+                I design and build dynamic web applications with a focus on clean modular code, intuitive aesthetics, and robust performance systems. My goal is to build digital products that offer stellar user experiences.
+              </p>
+              <p class="about-text">
+                Constantly learning and adapting to modern stacks, I leverage standard practices to deliver high reliability on client-side and server-side components.
+              </p>
+            </div>
+          </div>
+          
+          <div class="about-details">
+            <h3 class="about-title"><i class="fa-solid fa-gears"></i> Core Competencies</h3>
+            <p class="about-text">
+              Equipped with a solid background in full-stack architecture, I assist teams in planning out layouts, database structures, integration requirements, and CI/CD pipelines from scratch.
+            </p>
+            
+            <ul class="about-features">
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Responsive Web Layouts</li>
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Performance Optimization</li>
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Modular REST API Design</li>
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Multi-tenant Database Structures</li>
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Automated Lint & Test Pipelines</li>
+              <li class="about-feature-item"><i class="fa-solid fa-check"></i> Interactive UI Micro-animations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [EXPERIENCE TIMELINE SECTION WILL BE INSERTED HERE VIA JAVASCRIPT] -->
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I Do</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically Injected Skill Categories -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Portfolio</span>
+          <h2 class="section-title">Recent Work</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically Injected Project Cards -->
+        </div>
+        
+        <div class="projects-actions">
+          <button id="load-more-btn" class="btn btn-secondary">
+            <i class="fa-solid fa-rotate"></i> Load More Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="contact-wrapper">
+          <!-- Contact details info -->
+          <div class="contact-info-container">
+            <div class="card contact-info-card">
+              <h3 class="about-title"><i class="fa-solid fa-comments"></i> Contact Details</h3>
+              <p class="about-text" style="margin-bottom: 2rem;">
+                Have a project idea, question, or just want to connect? Send a message and I'll get back to you within 24 business hours.
+              </p>
+              
+              <ul class="contact-detail-list">
+                <li class="contact-detail-item">
+                  <div class="contact-icon-wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Email Me</span>
+                    <a href="mailto:bharathi.b@example.com" class="contact-value" id="contact-email">bharathi.b@example.com</a>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="contact-icon-wrapper">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Tamil Nadu, India</span>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="contact-icon-wrapper">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Freelance Status</span>
+                    <span class="contact-value">Available for Projects</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Contact form details -->
+          <div class="card contact-form-card">
+            <!-- Form Success Overlay -->
+            <div class="success-overlay" id="form-success-overlay">
+              <div class="success-icon-container">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3 class="success-title">Message Sent!</h3>
+              <p class="success-desc">
+                Thank you for reaching out. Your message has been sent successfully. I will be in touch shortly!
+              </p>
+              <button class="btn btn-primary" id="success-close-btn">Send Another Message</button>
+            </div>
+            
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <div class="form-input-wrapper">
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Bharathi B" minlength="3" required>
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-error-msg" id="name-error"><i class="fa-solid fa-circle-exclamation"></i> Name must be at least 3 characters.</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <div class="form-input-wrapper">
+                  <input type="email" id="email" name="email" class="form-input" placeholder="bharathi@example.com">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-error-msg" id="email-error"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.</div>
+              </div>
+              
+              <div class="form-group textarea-group">
+                <label for="message" class="form-label">Your Message</label>
+                <div class="form-input-wrapper">
+                  <textarea id="message" name="message" class="form-input" rows="5" placeholder="Project details, timeline, ideas..." style="resize: none;"></textarea>
+                  <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <div class="form-error-msg" id="message-error"><i class="fa-solid fa-circle-exclamation"></i> Message must be at least 10 characters.</div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-wrapper">
+      <div class="footer-logo">BHARATHI B</div>
+      
+      <div class="copyright" id="footer-copyright">
+        &copy; 2026 BHARATHI B. All rights reserved.
+      </div>
+      
+      <div class="footer-socials">
+        <a href="#" class="social-btn" id="social-github" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-btn" id="social-linkedin" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social-btn" id="social-twitter" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
