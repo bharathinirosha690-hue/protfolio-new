@@ -3,7 +3,7 @@ const PORTFOLIO_DATA = {
         name: "BHARATHI B",
         title: "Full-Stack Developer",
         subtitle: "I create robust backends and premium responsive frontends using structured, performance-oriented vanilla logic.",
-        avatar: "assets/image copy.png",
+        avatar: "assets/profile.jpeg",
         email: "bharathi.b@example.com",
         github: "https://github.com/bharathinirosha690-hue",
         linkedin: "https://www.linkedin.com/in/bharathi-b-balasubramanian-8b7b383b2",
